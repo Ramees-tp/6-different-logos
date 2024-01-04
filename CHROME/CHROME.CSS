@@ -1,0 +1,96 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bigboss{
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.smallboss{
+    width: 32%;
+    height: 32%;
+    border: 15px solid white;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+   
+    
+
+
+}
+.red{
+    height: 32%;
+    width: 45vh;
+    background-color:red;
+    position: absolute;
+    top: -4px;
+    left: 70px;  
+}
+.red::after{
+    content: "";
+    background-color: red;
+  
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: rotate(60deg);
+    transform-origin: right 2px;
+    right: 187px;
+    top: 136px;
+  }
+
+  .yellow{
+    height: 32%;
+    width: 45vh;
+    background-color: rgb(243, 228, 17);
+    position: absolute;
+    top: 217px;
+    left: 62px;
+    transform: rotate(120deg);  
+}
+.yellow::after{
+    content: "";
+    background-color: rgb(243, 228, 17);
+    color: rgb(94, 122, 29);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: rotate(60deg);
+    transform-origin: right 2px;
+    right: 187px;
+    top: 136px;
+  }
+
+.green{
+    height: 32%;
+    width: 45vh;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    left: -125px;
+    transform: rotate(-120deg);  
+}
+.green::after{
+    content: "";
+    background-color: green;
+    color: rgb(90, 73, 73);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: rotate(60deg);
+    transform-origin: right 2px;
+    right: 187px;
+    top: 136px;
+  }

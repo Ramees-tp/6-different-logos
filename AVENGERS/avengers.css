@@ -1,0 +1,90 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px;
+    background-color: transparent;
+    z-index: -1;
+    position: relative;
+}
+.logo::before{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border: 25px solid;
+    border-radius: 50%;
+    top: 47px;
+    right: 45px;
+}
+.logo::after{
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 145px;
+    background-color: rgb(0, 0, 0);
+    transform: skew(-24deg);
+    top: 111px;
+    left: 84px;
+    box-shadow: 0px 0px 1px 4px white;
+
+}
+.logo i{
+    position: absolute;
+    left: 45px;
+    top: 45px;
+}
+.logo i::before{
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 184px;
+    background-color: black;
+    top: -23px;
+    left: 119px;
+    z-index: -1;
+
+}
+.logo i::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    top: 98px;
+    left: 94px;
+    border-top: 50px solid transparent;
+
+    border-right: 50px solid rgb(202, 20, 20);
+    transform: rotate(-45deg);
+    z-index: -1;
+
+}
+.hai{
+    width: 46px;
+    height: 34px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    right: 182px;
+    bottom: -18px;
+    
+}
+.hai::before{
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 95px;
+    background-color: rgb(0, 0, 0);
+    right: -7px;
+    top: -129px;
+    transform: skew(-23deg);   
+}
